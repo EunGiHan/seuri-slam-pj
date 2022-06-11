@@ -7,6 +7,8 @@ RUN apt-get update -y && apt-get upgrade -y
 
 RUN useradd -m user && yes password | passwd user
 
+RUN pwd && ls -l
+
 RUN echo "== Start Debug build == " && \
 cd slam-build-prac && \
 git remote update && \
