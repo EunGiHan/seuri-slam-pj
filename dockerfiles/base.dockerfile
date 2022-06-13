@@ -39,6 +39,6 @@ RUN pip3 install gitpython
 RUN apt-get autoclean
 
 RUN mkdir slam && cd slam && \
-    git clone https://github.com/EunGiHan/slam-build-prac.git &&\
-    cd slam-build-prac && ./buildDeps.py --d --system
+    git clone https://github.com/EunGiHan/seuri-slam-pj.git &&\
+    cd seuri-slam-pj && ./buildDeps.py --d --system
 
